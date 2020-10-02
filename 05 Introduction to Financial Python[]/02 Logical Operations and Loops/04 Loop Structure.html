@@ -13,7 +13,7 @@
 </pre>
 <pre class="python">i = 0
 while i &lt; 5:
-    print i
+    print(i)
     i += 1
 [out]:
 0
@@ -37,7 +37,7 @@ while i &lt; 5:
 <div class="section-example-container">
 <pre class="csharp">
 </pre>
-<pre class="python">for x in [1,2,3,4,5]: print x
+<pre class="python">for x in [1,2,3,4,5]: print(x)
 [out]:
 1
 2
@@ -60,7 +60,7 @@ new_list = []
 for stock in stocks:
     if stock not in selected:
         new_list.append(stock)
-print new_list
+print(new_list)
 [out]: ['GOOG', 'FB', 'F', 'V', 'G', 'GE']
 </pre>
 </div>
@@ -80,7 +80,7 @@ print new_list
 </pre>
 <pre class="python">stocks = ['AAPL','GOOG','IBM','FB','F','V', 'G', 'GE']
 for stock in stocks:
-    print stock
+    print(stock)
     if stock == 'FB': break
 [out]:
 AAPL
@@ -100,7 +100,7 @@ FB
 <pre class="python">stocks = ['AAPL','GOOG','IBM','FB','F','V', 'G', 'GE']
 for stock in stocks:
     if stock == 'FB': continue
-    print stock
+    print(stock)
 [out]:
 AAPL
 GOOG
