@@ -8,7 +8,7 @@
 <pre class="python">squares = []
 for i in [1,2,3,4,5]:
     squares.append(i**2)
-print squares
+print(squares)
 [out]: [1, 4, 9, 16, 25]
 </pre>
 </div>
@@ -22,7 +22,7 @@ print squares
 </pre>
 <pre class="python">foo = [1,2,3,4,5]
 squares = [x**2 for x in foo]
-print squares
+print(squares)
 [out]: [1, 4, 9, 16, 25]
 </pre>
 </div>
@@ -37,7 +37,7 @@ print squares
 <pre class="python">stocks = ['AAPL','GOOG','IBM','FB','F','V', 'G', 'GE']
 selected = ['AAPL','IBM']
 new_list = [x for x in stocks if x not in selected]
-print new_list
+print(new_list)
 [out]: ['GOOG', 'FB', 'F', 'V', 'G', 'GE']
 </pre>
 </div>
@@ -49,9 +49,9 @@ print new_list
 <div class="section-example-container">
 <pre class="csharp">
 </pre>
-<pre class="python">print [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
-print [str(x) + ' vs ' + str(y) for x in ['AAPL','GOOG','IBM','FB']
-                                for y in ['F','V','G','GE'] if x != y]
+<pre class="python">print([(x, y) for x in [1,2,3] for y in [3,1,4] if x != y])
+print([str(x) + ' vs ' + str(y) for x in ['AAPL','GOOG','IBM','FB']
+                                for y in ['F','V','G','GE'] if x != y])
 [out]:
 [(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
 ['AAPL vs F', 'AAPL vs V', 'AAPL vs G', 'AAPL vs GE', 'GOOG vs F', 'GOOG vs V', 'GOOG vs G', 'GOOG vs GE', 'IBM vs F', 'IBM vs V', 'IBM vs G', 'IBM vs GE', 'FB vs F', 'FB vs V', 'FB vs G', 'FB vs GE']
