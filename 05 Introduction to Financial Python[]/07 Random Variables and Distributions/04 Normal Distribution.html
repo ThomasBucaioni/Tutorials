@@ -29,7 +29,7 @@ plt.show()
 
 <pre class="python">import quandl
 quandl.ApiConfig.api_key = 'tAyfv1zpWnyhmDsp91yv'
-spy_table = quandl.get('BCIW/_SPXT')
+spy_table = quandl.get('')
 spy = spy_table.loc['2009':'2017',['Open','Close']]
 spy['log_return'] = np.log(spy.Close).diff()
 spy = spy.dropna()
