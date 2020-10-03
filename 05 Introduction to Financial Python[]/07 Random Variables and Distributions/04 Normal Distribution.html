@@ -41,8 +41,11 @@ spy = spy.dropna()
 
 <div class="section-example-container">
 
-<pre class="python">plt.figure(figsize = (20,10))
-spy.log_return.plot()
+<pre class="python">import scipy.stats as stats
+plt.figure(figsize = (20,10))
+x = np.linspace(-5, 5, 100)
+y = stats.norm.pdf(x,0,1)
+plt.plot(x,y, color='coral')
 plt.show()
 </pre>
 </div>
