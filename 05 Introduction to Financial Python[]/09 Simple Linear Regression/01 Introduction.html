@@ -20,7 +20,7 @@ amzn = amzn_table.loc['2017':'2017-6',['Close']]
 spy_log = np.log(spy.Close).diff().dropna()
 amzn_log = np.log(amzn.Close).diff().dropna()
 df = pd.concat([spy_log,amzn_log],axis = 1).dropna()
-df.columns = ['spx','amzn']
+df.columns = ['spy','amzn']
 print df.tail()
 </pre>
 </div>
