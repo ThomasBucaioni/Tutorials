@@ -227,11 +227,11 @@ print model.summary()
 <div class="section-example-container">
 
 <pre class="python">
-import urllib2
+import urllib.request
 from datetime import datetime
 
-url = 'https://www.quantconnect.com/tutorials/wp-content/uploads/2017/08/F-F_Research_Data_5_Factors_2x3_daily.csv'
-response   = urllib2.urlopen(url)
+url = ''
+response   = urllib.request.urlopen(url)
 fama_table = pd.read_csv(response)
 
 # Convert time column into index
