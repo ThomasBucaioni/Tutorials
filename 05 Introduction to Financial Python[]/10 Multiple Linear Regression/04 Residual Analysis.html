@@ -59,7 +59,7 @@ plt.show()
 
 <pre class="python">from statsmodels.stats import diagnostic as dia
 het = dia.het_breuschpagan(fama_model.resid,fama_df[['MKT','SMB','HML','RMW','CMA']][1:])
-print 'p-value: ', het[-1]
+print 'p-value of Heteroskedasticity: ', het[-1]
 [out]:p-value of Heteroskedasticity:  0.144075842844
 </pre>
 </div>
