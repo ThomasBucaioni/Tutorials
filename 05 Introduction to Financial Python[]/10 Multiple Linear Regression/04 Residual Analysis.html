@@ -42,7 +42,7 @@ print 'Residual variance:', np.var(fama_model.resid)
 <div class="section-example-container">
 
 <pre class="python">plt.figure(figsize = (20,10))
-plt.scatter(df.spy,simple.resid)
+plt.scatter(df.spy,fama_model.resid)
 plt.axhline(0.05)
 plt.axhline(-0.05)
 plt.xlabel('x value')
